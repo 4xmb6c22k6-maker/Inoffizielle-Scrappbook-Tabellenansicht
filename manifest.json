@@ -1,0 +1,20 @@
+{
+  "manifest_version": 3,
+  "name": "Tabellenansicht für Auswahlen bei Scrappbook (inoffiziell)",
+  "version": "1.0",
+  "description": "Work in progress! Inoffizielles Add-on, das Scrappbook-Kommentare in einer übersichtlichen Tabelle anzeigt. Nicht verbunden mit Scrappbook oder PhotoStore24.",
+  "permissions": [
+    "clipboardWrite"
+  ],
+  "host_permissions": [
+    "https://builder.scrappbook.de/*",
+    "https://api.scrappbook.de/*"
+  ],
+  "content_scripts": [
+    {
+      "matches": ["https://builder.scrappbook.de/*"],
+      "js": ["content.js"],
+      "css": ["styles.css"]
+    }
+  ]
+}
